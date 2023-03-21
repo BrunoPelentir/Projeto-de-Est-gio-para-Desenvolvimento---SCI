@@ -1,0 +1,27 @@
+package teste;
+import java.util.Scanner;
+public class Maior_Menor {
+			public static void main(String[] args) {
+
+				Scanner scanner = new Scanner (System.in);
+				int valor[] = new int[5];
+				int maior = 0, menor = 0; 
+				
+				for(int i = 0; i < valor.length; i++){
+					System.out.print("Digite o " +(i+1)+"º valor: ");
+					valor[i] = scanner.nextInt();
+					if(valor[i] > maior){ 
+						maior = valor[i];
+					}
+				}
+				for (int i = 0; i < valor.length; i++) {
+					if(valor[i] < menor){
+						menor = valor[i];
+					}
+				}
+				System.out.println("Maior valor = "+ maior);
+				System.out.println("Menor valor = "+ menor);
+			}
+		
+
+	}
